@@ -1,0 +1,65 @@
+@import './variables.css';
+
+.header{
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+/* Estilos para a Logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo p{
+    color: var(--text-color);
+}
+
+/* Estilos para o Menu de Navegação */
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu ul li{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-menu a:hover{
+    color: var(--accent-color);
+}
+
+/* Estilos para o botão do WhatsApp */
+.nav-menu button{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-menu button:hover{
+    background-color: var(--text-color);
+    color: var(--accent-color);
+}
+
