@@ -1,0 +1,42 @@
+@import './variables.css';
+
+.hero {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+.hero h1{
+    color: var(--text-color);
+    font-size: 2.5em;
+}
+
+.hero p{
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: 500px
+}
+
+.hero img{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+}
+
+.hero-btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border: none;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}

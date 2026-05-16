@@ -1,0 +1,103 @@
+@import './variables.css';
+
+.habilities{
+    padding: 6rem 0;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilities h2{
+    font-size: 3em;
+    margin-bottom: 2rem;
+    color: var(--bg-color);
+}
+
+.habilities-list{
+    list-style: none;
+    font-size: 4.3em;
+}
+
+.habilities-list ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+/* Cor Hover HTML */
+.fa-html5:hover{
+    color: #E34F26;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover CSS */
+.fa-css3-alt:hover{
+    color: #1572B6;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover JavaScript */
+.fa-js:hover{
+    color: #F7DF1E;
+    transition: all 0.3s ease-in-out;
+} 
+
+/* Cor Hover React */
+.fa-react:hover{
+    color: #61DAFB;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover TypeScript */
+.fa-typescript:hover{
+    color: #3178C6;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover Code */
+.fa-code:hover{
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover Java */
+.fa-java:hover{
+    color: #F89820;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover Python */
+.fa-python:hover{   
+    color: #3776AB;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover Git */
+.fa-git-alt:hover{
+    color: #F05032;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover GitHub */
+.fa-github:hover{
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover wordpress */
+.fa-wordpress:hover{
+    color: #21759B;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cor Hover npm */
+.fa-npm:hover{
+    color: #CB3837;
+    transition: all 0.3s ease-in-out;
+}
