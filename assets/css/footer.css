@@ -51,7 +51,7 @@
 
 @media (max-width: 480px) {
     .social-medias-list {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.5rem;
     }
 }
