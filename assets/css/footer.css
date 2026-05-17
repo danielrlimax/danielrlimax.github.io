@@ -30,3 +30,28 @@
 .social-medias-list a:hover{
     color: var(--bg-color);
 }
+
+/* Responsividade */
+@media (max-width: 991px){
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-medias-list {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-medias-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

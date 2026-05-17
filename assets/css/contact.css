@@ -57,3 +57,62 @@
 .contact-item:hover i{
     color: var(--accent-color);
 }
+
+/* Responsividade */
+@media (max-width: 991px){
+    .contact-header {
+        padding: 3rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-header {
+        padding: 2rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-header p {
+        font-size: 0.9rem;
+    }
+
+    .contact-content a {
+        font-size: 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+}

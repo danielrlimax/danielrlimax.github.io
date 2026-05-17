@@ -64,3 +64,107 @@
     background-color: var(--text-color);
     color: var(--accent-color);
 }
+
+/* Estilos para o ícone do menu em telas menores */
+.menu-toggle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3 ease-in-out;
+}
+
+/* ==========================================
+   RESPONSIVIDADE: TABLETS E CELULARES
+   ========================================== */
+@media (max-width: 992px) {
+    
+    /* 1. Botão Toggle (Hambúrguer) */
+    .menu-toggle {
+        display: block; /* Garante que aparece no mobile */
+        position: relative;
+        z-index: 1000; /* Fica acima do menu aberto */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: var(--text-color); /* Cor branca original */
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* CORREÇÃO AQUI: Quando o botão tem a classe .active (menu aberto) */
+    .menu-toggle.active i {
+        color: var(--bg-color) !important; /* O "X" fica Azul contra o fundo branco */
+    }
+
+    /* 2. Estrutura do Menu Tela Cheia */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Escondido à esquerda */
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff; /* Fundo branco profissional */
+        z-index: 900; /* Abaixo do botão toggle, acima do resto do site */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.4s cubic-bezier(0.1, 0.76, 0.55, 0.94);
+    }
+
+    /* Menu Aberto */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* 3. Lista de Links Internos */
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        color: var(--bg-color); /* Links em Azul no fundo branco */
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    /* 4. Botão WhatsApp dentro do menu */
+    .nav-menu button {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 12px 35px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    /* Ajustes específicos para celulares pequenos */
+    @media (max-width: 768px) {
+        .nav-menu a {
+            font-size: 1.4rem;
+        }
+        
+        .nav-menu button {
+            padding: 10px 30px;
+            font-size: 1rem;
+        }
+        
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

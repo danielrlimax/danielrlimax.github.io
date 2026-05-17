@@ -101,3 +101,28 @@
     color: #CB3837;
     transition: all 0.3s ease-in-out;
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .habilities-list ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .habilities-list ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilities-list ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}

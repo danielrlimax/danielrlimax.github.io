@@ -25,7 +25,7 @@
     background-color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: calc(33.333% - 1.4rem);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -98,4 +98,23 @@
 
 .project-item-button-site:hover {
     background-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        width: 90%;
+    }
 }
