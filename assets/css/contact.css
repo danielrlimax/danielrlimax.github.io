@@ -1,0 +1,59 @@
+@import './variables.css';
+
+.contact-header{
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.contact-header h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header p{
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    text-align: center;
+    max-width: 600px;
+}
+
+.contact-content{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.contact-content a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item{
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item i{
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover i,
+.contact-item:hover i{
+    color: var(--accent-color);
+}
